@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>webpack starterkit</title>
-</head>
-<body>
-  <h1>webpack starter</h1>
-  <p>✨ A lightweight foundation for your next webpack based frontend project.</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../src/styles/index.scss" />
+    <title>webpack starterkit</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <section class="elementBody">
+      <h1>Bulb is: <span id="headStyle">OFF</span></h1>
+      <i class="fas fa-lightbulb"></i>
+      <section class="controls">
+        <br />
+        <br />
+        <input
+          type="text"
+          value="yellow"
+          placeholder="Add a valid color"
+          name="color"
+        />
+        <br />
+        <button onclick="turnOn()">TURN ON</button>
+        <button onclick="turnOff()">TURN OFF</button>
+      </section>
+    </section>
+  </body>
 </html>
